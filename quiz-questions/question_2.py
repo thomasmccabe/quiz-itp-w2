@@ -28,9 +28,27 @@ def number_of_customers_per_state(customers):
         'NY': 1
     }
     """
-    # Write your code here
-    pass
-
+    dictionary_list = {}
+    
+    customerList = customers['UT']
+    customerCount = 0
+    for customer in customerList:
+        customerCount += 1
+            dictionary_list['UT'] = customerCount
+            
+    customerList = customers['NY']
+    customerCount = 0
+    for customer in customerList:
+        customerCount += 1
+            dictionary_list['NY'] = customerCount
+            
+    customerList = customers['CA']
+    customerCount = 0
+    for customer in customerList:
+        customerCount += 1
+            dictionary_list['CA'] = customerCount
+                
+    return dictionary_list
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
     def test_number_of_customers_per_state(self):
