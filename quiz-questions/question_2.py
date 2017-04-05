@@ -33,19 +33,19 @@ def number_of_customers_per_state(customers):
     customerList_1 = customers['UT']
     customerCount_1 = 0
     for customer in customerList_1:
-        customerCount += 1
+        customerCount_1 += 1
             dictionary_list['UT'] = customerCount_1
             
     customerList_2 = customers['NY']
     customerCount_2 = 0
     for customer in customerList_2:
-        customerCount += 1
+        customerCount_2 += 1
             dictionary_list['NY'] = customerCount_2
             
     customerList_3 = customers['CA']
     customerCount_3= 0
     for customer in customerList_3:
-        customerCount += 1
+        customerCount_3 += 1
             dictionary_list['CA'] = customerCount_3
                 
     return dictionary_list
